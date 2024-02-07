@@ -1,3 +1,27 @@
+------------
+Temporary fix for Symfony7+Puphpeteer until https://github.com/zoonru/rialto/pull/2 is merged. Add to your composer.json:
+```
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/klkvsk/puphpeteer"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/klkvsk/rialto"
+        }
+    ],
+
+    ...
+
+    "require": {
+        ...
+        "zoon/puphpeteer": "dev-temp-deps-symfony-7",
+        ...
+    },
+```
+---------------
+
 # PuPHPeteer
 
 <img src="https://user-images.githubusercontent.com/817508/100672192-dd258500-3361-11eb-845f-e8b5109752e4.png" style="max-width:100%;" width="190px" align="right">
