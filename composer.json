@@ -22,7 +22,7 @@
     "php": "^8.0",
     "ext-json": "*",
     "composer/semver": "^3.0",
-    "zoon/rialto": "^1.5",
+    "zoon/rialto": "dev-zoon",
     "psr/log": "^3.0",
     "thecodingmachine/safe": "^2.5"
   },
@@ -56,5 +56,11 @@
   },
   "config": {
     "sort-packages": true
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/klkvsk/rialto"
+    }
+  ]
 }
